@@ -1,0 +1,29 @@
+/*  
+    Report Style is apply only for report
+    Created on : Apr 11, 2018, 11:26:13 AM
+    Author     : Euitsols
+*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+*{
+     font-family: "Open Sans", Museo-Sans-300, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+table.table-short,.table-short tr,.table-short td,.table-short th{
+    font-size: 10px; font-family: 'Open Sans', sans-serif;
+
+}
+h5 {
+    font-size: 16px;
+    line-height: 0.7em;
+}
+
+div,table,tr,td,th,thead,tbody{
+    font-size: 10px; font-family: 'Open Sans', sans-serif;
+}
+
+.company_header h6 { font-size: 12px; line-height: 0.8; font-weight: normal;}
+.table>thead>tr>th {padding: 4px;}
+
+.report-logo {display: inline-block; float: left;}
+
+.company_header {padding-bottom: 7px;}

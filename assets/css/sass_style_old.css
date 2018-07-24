@@ -1,0 +1,109 @@
+.blue { color: 'blue'; }
+
+.red { color: 'red'; }
+
+.yellow { color: 'yellow'; }
+
+html, body { width: 100%; overflow-x: hidden; }
+
+body { height: 100%; font-weight: normal; margin: 0px; padding: 0px; font-size: 14px; line-height: 28px; position: relative; background-color: #fff; color: #333; font-family: "Open Sans", sans-serif; }
+
+.padd_top_0 { padding: 0px; }
+
+.padX-30 { padding-left: 30px; padding-right: 30px; }
+
+/**nav menu section**/
+.button.navbar-right { margin-top: 20px; }
+
+.seperate_border_nav { border-left: 1px solid #FDC600; }
+
+.navbar-right .login { background-color: #fff; margin-right: 5px; color: #333; }
+.navbar-right .login_in_open { padding: 4px; }
+.navbar-right .login_in_open span { -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; border: 1px solid #ccc; padding: 5px; }
+.navbar-right .logout_open { padding: 0px; padding-left: 30px; }
+.navbar-right .join, .navbar-right a.join_nav { background-color: #fff; color: #333; border: 1px solid #FDC600; }
+.navbar-right .join:hover, .navbar-right a.join_nav:hover { background-color: #FDC600; color: #fff; }
+
+a.join_nav { padding: 12px 26px; margin: 6px 0px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; background-color: #FDC600; color: #fff; }
+
+.message, .success, .error, .warning { border: 1px solid #ccc; padding: 10px; color: #333; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; }
+
+.success { border-color: green; }
+
+.error { border-color: red; }
+
+.warning { border-color: yellow; }
+
+.sign_up_wizard-card { border: none; }
+
+.wizard-card .tab-content { min-height: 305px; }
+
+#lavel1 { border: 1px solid #FDC600; }
+
+label div.lavel { border: 1px solid #ccc; padding: 30px; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; margin: 10px; text-align: center; min-width: auto; float: left; }
+
+div.image_sex, div.sex_name { text-align: center !important; }
+
+div.image_sex { font-size: 20px; }
+
+.opcity_0, .step3_property div p .select_image, .step3_property div p .add_more_button_disabled { opacity: 0; }
+
+.hpp-sign-up .iradio_square-yellow { display: none; }
+
+.logo_hpp { padding: 0px; margin-left: 10px; }
+
+.logo_hpp_footer img { height: 56px; }
+
+/**Profile menu css start**/
+.container .profile_menu_right { border-right: 1px solid #D1D1D1; border-left: 1px solid #D1D1D1; }
+.container .profile_menu_right .profile_ul ul { padding: 0px; }
+.container .profile_menu_right .profile_ul ul li { list-style: none; padding: 7px 7px; border-bottom: 1px solid #D1D1D1; -webkit-transition: all 0.4s ease; -moz-transition: all 0.4s ease; -ms-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease; text-transform: capitalize; }
+.container .profile_menu_right .profile_ul ul li a { color: #333; font-weight: normal; display: list-item; }
+.container .profile_menu_right .profile_ul ul li:first-child { border-top: 1px solid #D1D1D1; }
+.container .profile_menu_right .profile_ul ul li:hover { background-color: #FDC600; animation-delay: 0.48s; }
+.container .profile_menu_right .profile_ul ul li:hover a { color: #fff !important; }
+
+/**sell property css**/
+.type_of_property { min-height: 115px; display: flex; text-align: center; }
+.type_of_property ol.type_pro { padding: 0px; }
+.type_of_property ol.type_pro li { float: left; list-style: none; margin: 15px; position: relative; }
+.type_of_property ol.type_pro li a { background-color: #eff0f4; padding: 30px; font-size: 15px; border: 0px solid #dddddd; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; -webkit-box-shadow: 0 0 0 1px #dbdce0; -moz-box-shadow: 0 0 0 1px #dbdce0; -ms-box-shadow: 0 0 0 1px #dbdce0; -o-box-shadow: 0 0 0 1px #dbdce0; box-shadow: 0 0 0 1px #dbdce0; }
+.type_of_property ol.type_pro li a.active_property { color: #333; background-color: #FDC600 !important; }
+.type_of_property ol.type_pro li span { position: absolute; top: -27px; right: 8px; color: #e70022; }
+.type_of_property ol.type_pro li:first-child { margin-left: 0px; }
+.type_of_property ol.type_pro li:last-child { margin-right: 0px; }
+
+.class_add { font-size: 15px; background-color: #222222; padding: 10px; color: #fff; -webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; -o-border-radius: 6px; border-radius: 6px; margin-top: 38px; cursor: pointer; }
+
+.class_remove { color: red; cursor: no-drop; }
+
+/** step3 property image css**/
+.step3_property div p { position: relative; }
+.step3_property div p .select_image { padding: 0px; border: 0px; position: absolute; top: 3px; width: 71px; height: 69px; }
+.step3_property div p .shadow_image { font-size: 30px; padding: 20px; border: 1px solid #ccc; }
+.step3_property div p .add_more_button { font-size: 20px; padding: 5px; border: 1px solid #ccc; margin-left: 16%; cursor: pointer; }
+.step3_property div p .alert_image { border: 1px solid red; }
+.step3_property div p .add_more_button_disabled { cursor: no-drop; }
+.step3_property div p .picture-src_property { width: 71px; height: 70px; position: absolute; top: 2px; left: 0px; display: none; }
+.step3_property div p .show_select_pic { display: block; }
+.step3_property div p .remove_icon { color: red; background-color: transparent; position: absolute; left: 58px; top: 4px; font-size: 12px; cursor: pointer; z-index: 999; }
+
+.mtX_15 { margin-top: 15px; }
+
+.mtY_15 { margin-bottom: 15px; }
+
+.remove_location { color: red; background-color: transparent; position: absolute; right: 8px; top: 47px; font-size: 12px; cursor: pointer; z-index: 999; }
+
+.dis_none { display: none; }
+
+.terms_lebel .error { width: 300px !important; display: inherit; max-width: 300px; margin-top: 28px; }
+
+.ct-wizard-orange textarea.propertyaddress { resize: none; }
+
+/**Property Preiew css**/
+.overflow .property-icon { position: relative; }
+.overflow .property-icon .hover_div { display: none; }
+
+/**responsive area**/
+@media (max-width: 767px) { .type_of_property ol.type_pro li a { padding: 10px; }
+  .type_of_property ol.type_pro li { margin: 9px; } }

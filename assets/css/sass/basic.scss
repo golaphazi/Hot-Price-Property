@@ -1,0 +1,364 @@
+$bg: #fff;
+$font_color:#333;
+$font_family: 'Open Sans', sans-serif;
+$font_weight: normal;
+$font_size: 14px;
+
+
+@import 'colors';
+@import 'mixin';
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+body {
+    height:100%;
+    font-weight: $font_weight;
+    @include margin(0px);
+    @include padding(0px);
+    font-size:$font_size;
+    line-height: 28px;
+    position: relative;
+	@include back($bg);
+	@include color($font_color);
+	font-family: $font_family; 
+}
+
+.padd_top_0{
+	@include padding(0px);
+}
+
+.padX-30 {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+/**nav menu section**/
+
+.button.navbar-right {
+   @include margin_top(20px);
+}
+.seperate_border_nav {
+    @include border_left(1px solid #FDC600);
+}
+.navbar-right{
+	.login {
+		@include back(#fff);
+		@include margin_right(5px);
+		@include color(#333);
+	}
+	.login_in_open{
+		@include padding(4px);
+		span{
+			@include border_radius(4px);
+			@include border(1px solid #ccc);
+			@include padding(5px);
+		}
+	}
+	.logout_open{
+		@include padding(0px);
+		padding-left: 30px;
+	}
+	.join{
+		@include back(#fff);
+		@include color(#333);
+		@include border(1px solid #FDC600);
+	}
+	.join:hover{
+		@include back(#FDC600);
+		@include color(#fff);
+	}
+}
+
+
+a.join_nav {
+	@extend .join;
+	@include padding(12px 26px);
+	@include margin(6px 0px);
+	@include border_radius(4px);
+	@include back(#FDC600);
+	@include color(#fff);
+}
+
+.message {
+  @include border(1px solid #ccc);
+  @include padding(10px);
+  @include color(#333);
+  @include border_radius(5px);
+}
+
+.success {
+ @extend .message;
+  border-color: green;
+}
+
+.error {
+  @extend .message;
+  border-color: red;
+}
+
+.warning {
+  @extend .message;
+  border-color: yellow;
+}
+
+.sign_up_wizard-card{
+	border:none;
+	
+}
+
+.wizard-card .tab-content {
+	min-height: 305px;	
+}
+
+
+#lavel1 {
+	@include border(1px solid #FDC600);
+	
+}
+
+label div.lavel {
+	@include border(1px solid #ccc);
+	@include padding(30px);
+	@include border_radius(10px);
+	@include margin(10px);
+	text-align: center;
+	min-width: auto;
+	float: left;	
+}
+
+div.image_sex, div.sex_name {
+	text-align: center !important;
+}
+div.image_sex{
+	font-size: 20px;
+}
+.opcity_0{
+	opacity:0;
+}
+
+.hpp-sign-up .iradio_square-yellow {
+	display: none;
+}
+
+.logo_hpp{
+	@include padding(0px);
+	margin-left:10px;
+}
+
+.logo_hpp_footer img {
+	height: 56px;
+}
+
+
+
+/**Profile menu css start**/
+.container{
+	.profile_menu_right{
+		@include border_right(1px solid #D1D1D1);
+		@include border_left(1px solid #D1D1D1);
+		.profile_ul{
+			ul {
+				@include padding(0px);
+				li{
+					list-style:none;
+					@include padding(7px 7px);
+					@include border_bottom(1px solid #D1D1D1);
+					@include transition(all 0.4s ease);
+					text-transform: capitalize;
+					a{
+						@include color(#333);
+						font-weight:normal;
+						display:list-item;
+					}
+				}
+				li:first-child{
+					@include border_top(1px solid #D1D1D1);
+				}
+				li:hover{
+					@include back(#FDC600);				
+					animation-delay: 0.48s
+				}
+				li:hover a{
+					@include color(#fff !important);
+				}
+			}
+		}
+	}
+}
+
+
+/**sell property css**/
+.type_of_property{
+	min-height: 115px;
+	display: flex;
+	text-align:center;
+	ol.type_pro{
+		@include padding(0px);
+		li{
+			float:left;
+			list-style:none;
+			@include margin(15px);
+			position:relative;
+			a{
+				@include back(#eff0f4);
+				@include padding(30px);
+				font-size:15px;
+				@include border(0px solid #dddddd);
+				@include border_radius(5px);
+				@include box_shadow(0 0 0 1px #dbdce0);
+				
+			}
+			a.active_property{
+				color:#333;
+				@include back(#FDC600 !important);
+			}
+			span{
+				position:absolute;
+				top:-27px;
+				right:8px;
+				color:#e70022;
+			}
+		}
+		li:first-child{
+			margin-left:0px;
+		}
+		li:last-child{
+			margin-right:0px;
+		}
+	}
+}
+
+
+.class_add {
+	font-size: 15px;
+	@include back( #222222);
+	@include padding(10px);
+	color: #fff;
+	@include border_radius(6px);
+	margin-top: 38px;
+	cursor:pointer;
+}
+.class_remove{color:red;cursor:no-drop;}
+
+
+/** step3 property image css**/
+
+.step3_property{
+	div{
+		p{
+			position:relative;
+			.select_image{
+				@include padding(0px);
+				@include border(0px);
+				@extend .opcity_0;
+				position: absolute;
+				top: 3px;
+				width:71px;
+				height:69px;
+			}
+			.shadow_image{
+				font-size:30px;
+				@include padding(20px);
+				@include border(1px solid #ccc);
+			}
+			
+			.add_more_button{
+				font-size:20px;
+				@include padding(5px);
+				@include border(1px solid #ccc);
+				margin-left: 16%;
+				cursor:pointer;
+			}
+			
+			.alert_image{
+				@include border(1px solid red);
+			}
+			
+			.add_more_button_disabled{
+				cursor:no-drop;
+				@extend .opcity_0;
+			}
+			
+			.picture-src_property{
+				width:71px;
+				height:70px;
+				position: absolute;
+				top: 2px;
+				left:0px;
+				display:none;
+			}
+			.show_select_pic{
+				display:block;
+			}
+			.remove_icon{
+				color:red;
+				@include back(transparent);
+				position: absolute;
+				left: 58px;
+				top: 4px;
+				font-size: 12px;
+				cursor: pointer;
+				z-index: 999;
+			}
+			
+		}
+		
+	}
+}
+
+.mtX_15{
+	margin-top:15px;
+}
+.mtY_15{
+	margin-bottom:15px;
+}
+.remove_location {
+	color: red;
+	background-color: transparent;
+	position: absolute;
+	right: 8px;
+	top: 47px;
+	font-size: 12px;
+	cursor: pointer;
+	z-index: 999;
+}
+
+.dis_none{
+	display:none;
+}
+.terms_lebel .error {
+	width: 300px !important;
+	display: inherit;
+	max-width: 300px;
+	margin-top: 28px;
+}
+
+.ct-wizard-orange{
+	textarea.propertyaddress{
+		resize:none;
+	}
+}
+
+/**Property Preiew css**/
+.overflow{
+	.property-icon{
+		position:relative;
+		.hover_div{
+			display:none;
+		}
+	}
+}
+
+/**responsive area**/
+
+@media (max-width: 767px){
+	.type_of_property ol.type_pro li a {
+		padding: 10px;	
+	}
+	.type_of_property ol.type_pro li {
+		margin: 9px;
+	}
+
+}
+

@@ -1,0 +1,79 @@
+div#textEditor{
+	margin:0 auto;
+	width:100%;
+	min-height:200px;
+	height:auto;
+}
+
+div#theRibbon, div#theRibbon_bottom{
+	border-bottom: none;
+	padding:1px;
+	/*background:rgb(40,100,89);*/
+	background:#8d8484;
+	color:#fff;
+	border-radius: 0px 0px 0px 0px;
+}
+div#theRibbon_bottom{
+	border-radius: 0px 0px 0px 0px;
+	border-top: 1px solid #ccc;
+}
+div#theRibbon > button, div#theRibbon_bottom > button {
+	color: #fff;
+	border: transparent;
+	outline: none;
+	background: transparent;
+	cursor: pointer;
+	margin: 0px;
+	font-size: 11px;
+	padding: 3px;
+}
+select{
+	color:#333 !important;
+}
+div#theRibbon > button:hover, div#theRibbon_bottom > button:hover{
+	/*background: #eee;*/
+	color:#333;
+	transition: all 0.3s linear 0s;
+	outline:none;
+	background:transparent;
+}
+
+div#richTextArea{
+	/*border:2px solid rgb(40,100,89);*/
+	border:2px solid #8d8484;
+	height:100%;
+	width:100%;
+	background:#fff;
+}
+iframe#theNEXTeditor{
+	height:100%;
+	width:100%;
+	
+}
+
+input[type="color"] {
+	border: none;
+	outline: none;
+	cursor:pointer;
+	background: transparent;
+	width: 29px;
+	height: 19px;
+	margin-bottom: 5px;
+	margin: 0px !important;
+	padding: 0px !important;
+}
+/*
+.aaA {
+	height: 21px;
+	width: 21px;
+	vertical-align: middle;
+	-moz-opacity: .55;
+	opacity: .667;
+	margin: 2px 0;
+}
+.aaB {
+	background-image: url('img/html_editor.png');
+}
+.eY {
+	background-position: -84px 0;
+}*/
